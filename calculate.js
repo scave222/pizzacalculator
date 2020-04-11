@@ -1,60 +1,35 @@
-const first = document.getElementById('first');
-const second = document.getElementById('second');
-const third = document.getElementById('third');
-const fourth = document.getElementById('fourth');
-const output = document.getElementById('output');
-const btn = document.getElementById('btn');
-btn.addEventListener('click', calculatePizza);
-function calculatePizza(e) {
-    e.preventDefault();
-    let order1 = parseInt(first.value);
-    let order2 = parseInt(second.value);
-    let order3 = parseInt(third.value);
-    let order4 = parseInt(fourth.value);
-    let pizzaOrder = order1 * 1 + order2 * 2 + order3 * 3 + order4 * 4;
-    let large = 'Large Pizza';
-    let medium = 'Medium Pizza';
-    let small = 'Small Pizza';
-    let order = pizzaOrder;
-    if (order <= 4) {
-        console.log('Small Pizza');
-        output.innerText = `Order for One ${small}`;
-    } else if (order > 4 && order <= 6) {
-        output.innerText = `Order for One ${medium}`;
-        console.log('Medium:Pizza');
-    } else {
-        if (order > 6 && order < 8) {
-            output.innerText = `Order for One ${large}`;
-            console.log('Large Pizza');
-        }
-        if (order >= 8) {
-            if (order % 8 == 0) {
-                let orderCount = order / 8;
-                output.innerText = `Order for ${orderCount} ${large}`;
-                console.log(`Buy ${orderCount} of ${large}`);
-            }
-            if (order % 8 == 7) {
-                let orderCounts = order / 8;
-                let realOrder = Math.floor(orderCounts);
-                output.innerText = `Order for ${realOrder + 1} ${large}`;
-                console.log(`Buy ${realOrder + 1}X of Pizza`);
-            }
-            if (order % 8 >= 5 && order % 8 <= 6) {
-                let orderCoutn = order / 8;
-                let orderCoutnFloor = Math.floor(orderCoutn);
-                let orderCoutnCeil = Math.ceil(orderCoutn);
-                let mediumPizza = orderCoutnCeil - orderCoutnFloor;
-                output.innerText = `Order for ${orderCoutnFloor} ${large}  and ${mediumPizza} ${medium}`;
-                console.log(`Order for ${orderCoutnFloor} ${large}  and ${mediumPizza} ${medium}`);
-            }
-            if (order % 8 < 5 && order % 8 > 0) {
-                let orderCoutn = order / 8;
-                let orderCoutnFloor = Math.floor(orderCoutn);
-                let orderCoutnCeil = Math.ceil(orderCoutn);
-                let smallPizza = orderCoutnCeil - orderCoutnFloor;
-                output.innerText = `Order for ${orderCoutnFloor} ${large}  and ${smallPizza} ${small}`;
-                console.log(`Order for ${orderCoutnFloor} ${large}  and ${smallPizza} ${small}`);
-            }
-        }
-    }
+const slice1 = document.getElementById('slice1');
+const slice2 = document.getElementById('slice2');
+const slice3 = document.getElementById('slice3');
+const slice4 = document.getElementById('slice4');
+const button = document.getElementById('button');
+
+const txtResult1 = document.getElementById('txtResult1');
+const txtResult2 = document.getElementById('txtResult2');
+const txtResult3 = document.getElementById('txtResult3');
+
+button.addEventListener('click', calculate);
+
+var oneSlice;
+var twoSlice ;
+var threeSlice ;
+var fourSlice ;
+
+function calculate(e){
+   
+   let num1 = slice1.value;
+   let num2 =  slice2.value;
+   let num3 =  slice3.value;
+   let num4 =  slice4.value;
+
+   let oneSlice = e.target.value;
+
+   oneSlice = num1.split(',');
+   twoSlice = num2.split(',');
+   threeSlice = num3.split(',');
+   fourSlice = num4.split(',');
+   
+   txtResult3.innerHTML =(`Large Pizza: ${Math.ceil((parseInt(oneSlice[2]) + parseInt(twoSlice[2]) + parseInt(threeSlice[2]) + parseInt(fourSlice[2]))/8)}`);
+   txtResult2.innerHTML =(`Medium Pizza: ${Math.ceil((parseInt(oneSlice[1]) + parseInt(twoSlice[1]) + parseInt(threeSlice[1]) + parseInt(fourSlice[1]))/6)}`);
+   txtResult1.innerHTML =(`Small Pizza: ${Math.ceil((parseInt(oneSlice[0]) + parseInt(twoSlice[0]) + parseInt(threeSlice[0]) + parseInt(fourSlice[0]))/4)}`) ;
 }
