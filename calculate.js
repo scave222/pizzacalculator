@@ -15,14 +15,12 @@ var twoSlice ;
 var threeSlice ;
 var fourSlice ;
 
-function calculate(e){
+function calculate(){
    
    let num1 = slice1.value;
    let num2 =  slice2.value;
    let num3 =  slice3.value;
    let num4 =  slice4.value;
-
-   let oneSlice = e.target.value;
 
    oneSlice = num1.split(',');
    twoSlice = num2.split(',');

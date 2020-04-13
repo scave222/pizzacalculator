@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\codebits-academy\\command-line\\pizzacalculate\\cSharp\\pizzacalculator\\pizzacalculator.csproj": {}
+    "C:\\codebits-academy\\command-line\\pizzacalculate\\csharp\\pizzacalculator\\pizzacalculator.csproj": {}
   },
   "projects": {
-    "C:\\codebits-academy\\command-line\\pizzacalculate\\cSharp\\pizzacalculator\\pizzacalculator.csproj": {
+    "C:\\codebits-academy\\command-line\\pizzacalculate\\csharp\\pizzacalculator\\pizzacalculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\codebits-academy\\command-line\\pizzacalculate\\cSharp\\pizzacalculator\\pizzacalculator.csproj",
+        "projectUniqueName": "C:\\codebits-academy\\command-line\\pizzacalculate\\csharp\\pizzacalculator\\pizzacalculator.csproj",
         "projectName": "pizzacalculator",
-        "projectPath": "C:\\codebits-academy\\command-line\\pizzacalculate\\cSharp\\pizzacalculator\\pizzacalculator.csproj",
+        "projectPath": "C:\\codebits-academy\\command-line\\pizzacalculate\\csharp\\pizzacalculator\\pizzacalculator.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\codebits-academy\\command-line\\pizzacalculate\\cSharp\\pizzacalculator\\obj\\",
+        "outputPath": "C:\\codebits-academy\\command-line\\pizzacalculate\\csharp\\pizzacalculator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config"

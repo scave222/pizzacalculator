@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PHUSWWb1nRaKOQZ0PFjW9jsjtyP7nnJmPS9VPggpm7jBY2MiZ+n6ZWDyriGnW56PlDvP2P95k6di0Bcax4RhIg==",
+  "dgSpecHash": "W7mTNj5nM2j4WQIo7hwTdmWnKyHvhwfXIfdsq2NLryzzV35ohJigBUIpFnboInPKMhEhAgTOn4W7nkKu0+5RyQ==",
   "success": true,
-  "projectFilePath": "C:\\codebits-academy\\command-line\\pizzacalculate\\cSharp\\pizzacalculator\\pizzacalculator.csproj",
+  "projectFilePath": "C:\\codebits-academy\\command-line\\pizzacalculate\\csharp\\pizzacalculator\\pizzacalculator.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
